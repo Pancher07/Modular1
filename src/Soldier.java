@@ -1,7 +1,8 @@
 public class Soldier extends Person {
-
-    public Soldier(String lastName) {
+    private Commander myCommander;
+    public Soldier(String lastName, Commander myCommander) {
         super(lastName);
+        this.myCommander = myCommander;
     }
 
     @Override
